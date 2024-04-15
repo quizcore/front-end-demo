@@ -1,5 +1,7 @@
 <?php
 
+// Sample user Array
+
 $users = [
     [
         'fname' => 'First Name',
@@ -8,15 +10,6 @@ $users = [
         'dob' => '03/12/2000',
         'userId' => '0001'
     ]
-];
-
-// Sample topics Array with topics
-$topics = [
-    'Var', 'Rec', 'Sor Alg thms', 'Resion','Sorti orithms'
-];
-
-$passTopics = [
-    'Var', 'Rec', 'Sor Alg thms',
 ];
 
 // Sample Questions Array with Difficulty, Answer Choices, and Topics
