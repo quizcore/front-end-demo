@@ -242,9 +242,9 @@
           ></textarea>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <!-- Submit button (Add back end code to save contact info) -->
           <a type="submit" class="btn btn-bd-red btn-lg px-4 me-md-2">Submit</a>
         </div>
-        <!-- <button type="submit" class="btn btn-bd-red">Submit</button> -->
       </form>
     </div>
 
@@ -368,12 +368,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      document
-        .getElementById("myForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevents the default form submission behavior
-          window.location.href = "exam.php"; // Redirect to exam.html
-        });
+      // login
+      document.getElementById('loginButton').addEventListener('click', function() {
+      window.location.href = 'login.html';
+      });
     </script>
   </body>
 </html>
