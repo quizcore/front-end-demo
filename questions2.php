@@ -367,4 +367,3 @@ $questions = [
         'codeSnippetImage' => 'img/image.png',
     ],
 ];
-?>
