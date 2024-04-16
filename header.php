@@ -8,6 +8,7 @@
     <link href="CSS/headers.css" rel="stylesheet" />
     <link href="CSS/heroes.css" rel="stylesheet" />
     <link href="CSS/features.css" rel="stylesheet" />
+    <link href="CSS/sign-in.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
