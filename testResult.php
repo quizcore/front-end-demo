@@ -1,45 +1,24 @@
 <?php
-    $pageTitle = "Admin";
+    $pageTitle = "Guidelines";
     require_once 'header.php';
 ?>
 
 <!--Main-->
-<div class="container mt-5">
-  <h1 class="text-center mb-4">Admin Dashboard</h1>
-  
-  <div class="row">
-      <div class="col-md-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Manage Users</h5>
-                  <p class="card-text">View and manage user accounts.</p>
-                  <!-- <a href="#" class="btn btn-bd-red">Go to Users</a> -->
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="./user.php" class="btn btn-bd-red btn-lg px-4 me-md-2">Go to Users</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Manage Products</h5>
-                  <p class="card-text">Add, edit, and delete products.</p>
-                  <a href="#" class="btn btn-bd-red">Go to Products</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">View Reports</h5>
-                  <p class="card-text">Access and analyze sales reports.</p>
-                  <a href="#" class="btn btn-bd-red">Go to Reports</a>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+
+    <div class="container" id="testResults">
+    <h1>Test Results</h1>
+        <!-- Hardcoded user test results for demonstration -->
+        <div class="userResult container shadow p-3 my-5 bg-body-tertiary rounded">
+            <h3>Student 1</h3>
+            <p>Easy Questions: 4 out of 5 correct</p>
+            <p>Duration: 15 mins</p>
+            <p>Medium Questions: 3 out of 5 correct</p>
+            <p>Duration: 15 mins</p>
+            <p>Hard Questions: 2 out of 5 correct</p>
+            <p>Duration: 15 mins</p>
+            <p>Recommended Class: CS111</p>
+        </div>
+    </div>
 
 <!--Dark mode-->
 <div
@@ -112,6 +91,15 @@
     </li>
   </ul>
 </div>
+
+<script>
+  document
+    .getElementById("myForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevents the default form submission behavior
+      window.location.href = "exam.php"; // Redirect to exam.html
+    });
+</script>
 <!--End of Main-->
 
 <?php
