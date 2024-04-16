@@ -179,25 +179,25 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="./">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/exam.html">Exam</a>
+            <a class="nav-link" href="./exam.html">Exam</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/admin.php">Admin</a>
+            <a class="nav-link" href="./admin.php">Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/guideLines.html">Guidelines</a>
+            <a class="nav-link" href="./guideLines.html">Guidelines</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="./about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact.html">Contact Us</a>
+            <a class="nav-link" href="./contact.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/faq.html">FAQ</a>
+            <a class="nav-link" href="./faq.html">FAQ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
