@@ -188,10 +188,10 @@
             <a class="nav-link" href="./admin.php">Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./guideLines.html">Guidelines</a>
+            <a class="nav-link" href="./guidelines.php">Guidelines</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./about.php">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact Us</a>
