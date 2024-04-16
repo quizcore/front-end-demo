@@ -196,7 +196,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a style="margin-left: 30px;" class="navbar-brand" href="/">
+      <a style="margin-left: 30px;" class="navbar-brand" href="./">
         <img
         height="40px"
         src="img/cwu-wildcat-spirit-mark-single-color-reversed.png"
@@ -208,7 +208,7 @@
             <a class="nav-link active" aria-current="page" href="./">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./exam.html">Exam</a>
+            <a class="nav-link" href="./exam.php">Exam</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./admin.php">Admin</a>
