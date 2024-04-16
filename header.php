@@ -182,7 +182,7 @@
             <a class="nav-link active" aria-current="page" href="./">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./exam.html">Exam</a>
+            <a class="nav-link" href="./exam.php">Exam</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./admin.php">Admin</a>
