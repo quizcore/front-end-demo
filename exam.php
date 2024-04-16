@@ -108,8 +108,10 @@
   document
     .getElementById("myForm")
     .addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevents the default form submission behavior
-      window.location.href = "exam2.php"; // Redirect to exam2.php
+      // Prevents the default form submission behavior.
+      event.preventDefault();
+      // Redirect to exam2.php.
+      window.location.href = "exam2.php";
     });
 </script>
 <!--End of Main-->
