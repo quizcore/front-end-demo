@@ -217,3 +217,10 @@
       <button type="button" class="btn btn-light me-2" id="loginButton">Login / Sign-up</button>
     </div>
   </nav>
+
+  <script>
+    // Assign login link.
+    document.getElementById('loginButton').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+  </script>

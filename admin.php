@@ -112,6 +112,7 @@
     </li>
   </ul>
 </div>
+<!--End of Main-->
 
 <?php
     // Include footer.
