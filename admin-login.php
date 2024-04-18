@@ -48,7 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             // Email doesn't exist, display a generic error message.
             $login_err = "Invalid email or password.";
+            echo "<script>alert(`$login_err`)</script>";
         }
+    } else {
+        $login_err = $email_err . " " . $password_err;
+        echo "<script>alert(`$login_err`)</script>";
     }
 }
 ?>
@@ -67,7 +71,7 @@ require_once 'header.php';
                 <h1 class="h3 mb-3 fw-normal">Login as Admin</h1>
 
                 <div class="form-floating">
-                    <input type="email" class="form-control" id="adminEmail" placeholder="name@example.com" name="email">
+                    <input type="text" class="form-control" id="adminEmail" placeholder="name@example.com" name="email">
                     <label for="adminEmail">Email</label>
                 </div>
 
