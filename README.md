@@ -19,3 +19,7 @@ The code can prompt users for their information, display random questions accord
 * [ ] Add team member information in about.php
 * [ ] Fill in feature description in index.php
 * [ ] Add authentication to sensitive pages and data
+* [ ] Refactor the codebase
+* [ ] Allow admin to view number of students
+* [ ] View trend of student distribution over time
+* [ ] Record the time of completion of the self-placement quiz
