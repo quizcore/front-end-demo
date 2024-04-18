@@ -24,7 +24,7 @@ require_once 'header.php';
           <p class="card-text">View and manage user accounts.</p>
           <!-- <a href="#" class="btn btn-bd-red">Go to Users</a> -->
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="./user.php" class="btn btn-bd-red btn-lg px-4 me-md-2">Go to Users</a>
+            <a href="./admin-user.php" class="btn btn-bd-red btn-lg px-4 me-md-2">Go to Users</a>
           </div>
         </div>
       </div>
