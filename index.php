@@ -8,27 +8,24 @@ require_once 'header.php';
 <div class="container-fluid col-xxl-8 px-4 py-5">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
-      <img src="img/image.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+      <img src="img/cwu-des-moines.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="800" loading="lazy" />
     </div>
     <div class="col-lg-6">
       <h1 class="display-5 fw-bold lh-1 mb-3">
-        Responsive left-aligned hero with image
+        Self-Placement Testing for Computer Science Students
       </h1>
       <p class="lead">
-        Quickly design and customize responsive mobile-first sites with
-        Bootstrap, the world’s most popular front-end open source toolkit,
-        featuring Sass variables and mixins, responsive grid system,
-        extensive prebuilt components, and powerful JavaScript plugins.
+        CWU provides two entry-level computer science courses, CS110 and CS111. The online self-placement tool assists students in determining the appropriate path to take: CS110, CS111, or none at all!
       </p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <!-- Get Started button-->
-        <a href="guideLines.html" class="btn btn-bd-red btn-lg px-4 me-md-2">Get Started</a>
-        <form class="d-grid gap-1 d-md-flex justify-content-md-start">
-          <!-- View More button-->
+        <a href="exam.php" class="btn btn-bd-red btn-lg px-4 me-md-2">Get Started</a>
+        <!-- View More button-->
+        <!-- <form class="d-grid gap-1 d-md-flex justify-content-md-start">
           <button type="submit" class="btn btn-outline-secondary btn-lg px-4">
             View More
           </button>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
