@@ -11,22 +11,22 @@
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+            <a href="./" class="nav-link px-2 text-body-secondary">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Exam</a>
+            <a href="exam.php" class="nav-link px-2 text-body-secondary">Exam</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Guidelines</a>
+            <a href="guidelines.php" class="nav-link px-2 text-body-secondary">Guidelines</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+            <a href="faq.php" class="nav-link px-2 text-body-secondary">FAQs</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+            <a href="about.php" class="nav-link px-2 text-body-secondary">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Contact</a>
+            <a href="contact.php" class="nav-link px-2 text-body-secondary">Contact</a>
           </li>
         </ul>
       </footer>
