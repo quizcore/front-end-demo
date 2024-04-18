@@ -211,30 +211,17 @@
           <li class="nav-item">
             <a class="nav-link" href="./exam.php">Exam</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./admin.php">Admin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./guidelines.php">Guidelines</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.php">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.php">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./faq.php">FAQ</a>
-          </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="./admin.php">Admin</a></li>
+              <li><a class="dropdown-item" href="./guidelines.php">Guidelines</a></li>
+              <li><a class="dropdown-item" href="./faq.php">FAQs</a></li>
+              <li><a class="dropdown-item" href="./about.php">About</a></li>
+              <li><a class="dropdown-item" href="./contact.php">Contact Us</a></li>
             </ul>
           </li>
         </ul>
