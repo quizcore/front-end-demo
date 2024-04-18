@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Edumin - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/jqvmap.min.css">
+	<link rel="stylesheet" href="./css/chartist.min.css">
+	<!-- Summernote -->
+    <link href="./css/summernote.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./css/skin-3.css">
+    <script src="https://kit.fontawesome.com/6c2ee75d45.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-red">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="img/logo-white-3.png" alt="">
+                <img class="logo-compact" src="img/logo-text-white.png" alt="">
+                <img class="brand-title" src="img/logo-text-white.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-red">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left color-white">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0" style="color: black;">
+                                    <form>
+                                        <input class="form-control bg-danger" style="color: black;" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="img/pic4.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="ai-icon" href="index.html" aria-expanded="false">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-text">Dashboard 1</span>
+                    </a>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="fa fa-users"></i>
+                        <span class="nav-text">Students</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                            <li><a href="edit-student.html">Edit Students</a></li>
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                            <li><a href="edit-professor.html">Edit Professor</a></li>
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="fa fa-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                            <li><a href="edit-courses.html">Edit Courses</a></li>
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="fa-solid fa-id-card-clip"></i>
+							<span class="nav-text">Staff</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-staff.html">All Staff</a></li>
+                            <li><a href="add-staff.html">Add Staff</a></li>
+                            <li><a href="edit-staff.html">Edit Staff</a></li>
+                            <li><a href="staff-profile.html">Staff Profile</a></li>
+                        </ul>
+                    </li>
+
+				</ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+				    
+                <div class="row">
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-users"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Total Students</p>
+										<h3 class="text-white">3280</h3>
+										<div class="progress mb-2 bg-white">
+                                            <div class="progress-bar progress-animated bg-light" style="width: 80%"></div>
+                                        </div>
+										<small>80% Increase in 20 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-warning">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-user"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">New Students</p>
+										<h3 class="text-white">245</h3>
+										<div class="progress mb-2 bg-white">
+                                            <div class="progress-bar progress-animated bg-light" style="width: 50%"></div>
+                                        </div>
+										<small>50% Increase in 25 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-secondary">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-graduation-cap"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Total Course</p>
+										<h3 class="text-white">28</h3>
+										<div class="progress mb-2 bg-white">
+                                            <div class="progress-bar progress-animated bg-light" style="width: 76%"></div>
+                                        </div>
+										<small>76% Increase in 20 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-danger">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-dollar"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Fees Collection</p>
+										<h3 class="text-white">25160$</h3>
+										<div class="progress mb-2 bg-white">
+                                            <div class="progress-bar progress-animated bg-light" style="width: 30%"></div>
+                                        </div>
+										<small>30% Increase in 30 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-6 col-xxl-6 col-lg-12 col-sm-12">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">University Survey</h3>
+							</div>
+							<div class="card-body">
+								<div id="morris_bar_stalked" class="morris_chart_height" style="height: 300px !important;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">Donught Chart</h3>
+							</div>
+							<div class="card-body">
+								<div id="morris_donught_2" class="morris_chart_height" style="height: 300px !important;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">University Survey</h3>
+							</div>
+							<div class="card-body">
+								<div id="morris_area" class="morris_chart_height" style="height: 300px !important;"></div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">New Student List</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive recentOrderTable">
+                                    <table class="table verticle-middle table-responsive-md">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">No.</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Assigned Professor</th>
+                                                <th scope="col">Date Of Admit</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">Fees</th>
+                                                <th scope="col">Edit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+												<td>Jack Ronan</td>
+                                                <td>Airi Satou</td>
+                                                <td>01 August 2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">Checkin</span></td>
+                                                <td>Commerce</td>
+                                                <td>120$</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>02 </td>
+                                                <td>Jimmy Morris</td>
+                                                <td>Angelica Ramos</td>
+												<td>31 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-warning">Panding</span></td>
+                                                <td>Mechanical</td>
+                                                <td>120$</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03 </td>
+                                                <td>Nashid Martines</td>
+                                                <td>Ashton Cox</td>
+												<td>30 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-danger">Canceled</span></td>
+                                                <td>Science</td>
+                                                <td>520$</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>Roman Aurora</td>
+                                                <td>Cara Stevens</td>
+												<td>29 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-success">Checkin</span></td>
+                                                <td>Arts</td>
+                                                <td>220$</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>Samantha</td>
+                                                <td>Bruno Nash </td>
+												<td>28 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-success">Checkin</span></td>
+                                                <td>Maths</td>
+                                                <td>130$</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="../index.htm" target="_blank">Dexignlab</a> 2020</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./js/global.min.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+    <script src="./js/dlabnav-init.js"></script>	
+	
+	<!-- Chart sparkline plugin files -->
+    <script src=".js/jquery.sparkline.min.js"></script>
+	<script src="./js/sparkline-init.js"></script>
+	
+	<!-- Chart Morris plugin files -->
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/morris.min.js"></script> 
+	
+    <!-- Init file -->
+    <script src="./js/widgets-script-init.js"></script>
+	
+	<!-- Demo scripts -->
+    <script src="./js/dashboard.js"></script>
+	
+	<!-- Summernote -->
+    <script src="./js/summernote.min.js"></script>
+    <!-- Summernote init -->
+    <script src="./js/summernote-init.js"></script>
+	
+	<!-- Svganimation scripts -->
+    <script src="./js/vivus.min.js"></script>
+    <script src="./js/svg.animation.js"></script>
+    <!-- styleSwitcher scripts OFF
+    <script src="./js/styleSwitcher.js"></script>
+    -->
+		
+</body>
+</html>
