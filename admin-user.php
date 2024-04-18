@@ -1,4 +1,14 @@
 <?php
+// Initialize the session.
+session_start();
+// Check if the user is not logged in, redirect them to the login page.
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("Location: admin-login.php");
+  exit();
+}
+?>
+
+<?php
 $pageTitle = "Guidelines";
 require_once 'header.php';
 ?>
