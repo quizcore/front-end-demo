@@ -19,8 +19,8 @@ require_once 'testheader.php';
       </p>
 
     </div>
-    <div class="d-grid gap-1 justify-content-md-start">
-      <a href="exam2.php" class="btn btn-lg btn-bd-red w-100 py-2">Quick Start</a>
+    <div class="d-grid gap-1 justify-content-md-center">
+      <a href="exam.php" class="btn btn-lg btn-bd-red w-100 py-2">Quick Start</a>
     </div>
   </div>
 </div>
