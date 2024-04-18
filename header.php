@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -205,8 +210,16 @@
         <!--<button type="button" class="btn btn-light me-2" id="loginButton">Login / Sign-up</button> -->
       </div>
 
-      <button type="button" class="btn btn-light me-2" id="loginButton">Login / Sign-up</button>
+      <!-- Admin Logout. -->
+      <?php
+      if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+      ?>
+        <a href="admin-logout.php">Logout</a>
+      <?php
+      }
+      ?>
     </div>
+    <!-- <button type="button" class="btn btn-light me-2" id="loginButton">Login / Sign-up</button> -->
   </nav>
 
   <script>
