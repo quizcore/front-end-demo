@@ -10,7 +10,6 @@ session_start();
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?php echo "$pageTitle"; ?></title>
-  <link rel="stylesheet" href="CSS/styles.css" />
   <link href="CSS/headers.css" rel="stylesheet" />
   <link href="CSS/heroes.css" rel="stylesheet" />
   <link href="CSS/features.css" rel="stylesheet" />
@@ -221,10 +220,3 @@ session_start();
     </div>
     <!-- <button type="button" class="btn btn-light me-2" id="loginButton">Login / Sign-up</button> -->
   </nav>
-
-  <script>
-    // Assign login link.
-    document.getElementById('loginButton').addEventListener('click', function() {
-      window.location.href = 'login.html';
-    });
-  </script>
