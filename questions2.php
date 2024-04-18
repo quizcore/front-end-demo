@@ -4,8 +4,8 @@
 
 $users = [
     [
-        'fname' => 'First Name',
-        'lname' => 'Last Name',
+        'fname' => 'User',
+        'lname' => '1',
         'email' => 'easy@gmail.com',
         'dob' => '03/12/2000',
         'userId' => '0001'

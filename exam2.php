@@ -132,7 +132,7 @@
   // display user information
   const userInfo = getUser();
   const displayUser = document.getElementById('userInfo');
-  displayUser.innerHTML = `Hello ${userInfo}`;
+  displayUser.innerHTML = `Welcome ${userInfo}`;
 
 
   // function getRandomQuestionsByDifficulty
