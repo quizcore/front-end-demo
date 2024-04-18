@@ -6,6 +6,7 @@ require_once 'header.php';
 <!--Main-->
 <div class="container">
   <h2>User Information</h2>
+  <!-- Listing all users. -->
   <table class="table table-striped">
     <thead>
       <tr>
@@ -39,11 +40,19 @@ require_once 'header.php';
         <td>1995-05-15</td>
         <td>Passed</td>
       </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>john.smith@example.com</td>
+        <td>1994-05-15</td>
+        <td>Passed</td>
+      </tr>
       <!-- Add more rows for additional users -->
     </tbody>
   </table>
 
-  <canvas id="classPieChart" width="200" height="200" style="max-width: 200px; max-height: 200px"></canvas>
+  <!-- Student Self-Placement Distribution Pie Chart -->
+  <canvas id="classPieChart" width="200" height="200" style="max-width: 300px; max-height: 300px"></canvas>
 
 </div>
 
@@ -102,7 +111,7 @@ require_once 'header.php';
 </script>
 
 <script>
-  // Get data from table rows
+  // Get data from table rows.
   let tableRows = document.querySelectorAll('table tbody tr');
   let classData = {
     CS110: 0,
@@ -115,7 +124,7 @@ require_once 'header.php';
     classData[recommendedClass]++;
   });
 
-  // Create pie chart
+  // Create Student Self-Placement Distribution Pie Chart.
   let ctx = document.getElementById('classPieChart').getContext('2d');
   let myPieChart = new Chart(ctx, {
     type: 'pie',
@@ -129,7 +138,15 @@ require_once 'header.php';
           'rgba(75, 192, 192, 0.6)'
         ]
       }]
-    }
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'Student Self-Placement Distribution'
+        }
+      }
+    },
   });
 </script>
 
