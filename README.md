@@ -10,7 +10,7 @@ The code can prompt users for their information, display random questions accord
 * Download XAMPP: https://www.apachefriends.org/download.html
 * Start the local server using XAMPP
 * Open the subfolder "htdocs" in XAMPP and run "git clone https://github.com/quizcore/front-end-demo/" to clone the repository to the local file system
-* Open a browser, and enter the URL <localhost/front-end-demo>.
+* Open a browser, and enter the URL [localhost/front-end-demo](localhost/front-end-demo).
 
 # ROADMAP
 * [ ] Add complete question and answer pairs in FAQ.php
