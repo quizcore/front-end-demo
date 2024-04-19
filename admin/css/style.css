@@ -13716,15 +13716,15 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-headerbg="color_13"] .nav-control {
   background-color: #111111;
   color: #fff; }
-
+/*search_icon color*/
 [data-headerbg="color_14"][data-theme-version="dark"] .header,
 [data-headerbg="color_14"] .header {
   background-color: #1367c8;
   color: #fff; }
 [data-headerbg="color_14"][data-theme-version="dark"] .header-left input,
 [data-headerbg="color_14"] .header-left input {
-  border-color: #2480ea;
-  background-color: #2480ea !important;
+  border-color: #AB0032;
+  background-color: #AB0032 !important;
   color: #fff; }
   [data-headerbg="color_14"][data-theme-version="dark"] .header-left input::placeholder,
   [data-headerbg="color_14"] .header-left input::placeholder {
@@ -13734,7 +13734,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     border-color: #0f4f99; }
 [data-headerbg="color_14"][data-theme-version="dark"] .header-left .search_icon,
 [data-headerbg="color_14"] .header-left .search_icon {
-  background-color: #2480ea !important; }
+  background-color: #AB0032 !important; }
   [data-headerbg="color_14"][data-theme-version="dark"] .header-left .search_icon i,
   [data-headerbg="color_14"] .header-left .search_icon i {
     color: #fff; }
@@ -14492,7 +14492,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-sibebarbg="color_14"] .dlabnav .metismenu > li.mm-active {
     background-color: #0f4f99; }
   [data-layout="horizontal"][data-sibebarbg="color_14"][data-theme-version="dark"] .dlabnav .metismenu > li, [data-sibebarbg="color_14"] .dlabnav .metismenu > li {
-    border-color: #2480ea; }
+    border-color: #AB0032; }
   [data-sibebarbg="color_14"][data-theme-version="dark"] .dlabnav .metismenu a,
   [data-sibebarbg="color_14"] .dlabnav .metismenu a {
     color: rgba(255, 255, 255, 0.7); }

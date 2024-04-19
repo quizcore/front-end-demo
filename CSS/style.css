@@ -419,3 +419,7 @@ main.sign-up-mode .carousel {
   width: 16px;
   height: 16px;
 }
+
+.bg-red {
+  background-color: #AB0032;
+}
