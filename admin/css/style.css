@@ -9372,7 +9372,7 @@ svg.pulse-svg {
       @media only screen and (max-width: 767px) {
         .header-left .search_bar .search_icon {
           border-radius: 4px;
-          padding: 5px 10px !important; } }
+          padding: 15px 30px 20px 10px !important; } }
     @media only screen and (max-width: 767px) {
       .header-left .search_bar {
         position: static; }
