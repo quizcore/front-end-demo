@@ -63,13 +63,7 @@
             <a href="exam.php" class="nav-link px-2 text-body-secondary">Exam</a>
           </li>
           <li class="nav-item">
-            <a href="guidelines.php" class="nav-link px-2 text-body-secondary">Guidelines</a>
-          </li>
-          <li class="nav-item">
             <a href="faq.php" class="nav-link px-2 text-body-secondary">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.php" class="nav-link px-2 text-body-secondary">About</a>
           </li>
           <li class="nav-item">
             <a href="contact.php" class="nav-link px-2 text-body-secondary">Contact</a>

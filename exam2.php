@@ -15,17 +15,23 @@ include 'questions2.php';
 
     <!--Guidelines Div-->
     <div id=guidelinesDiv class="container shadow p-3 my-5 bg-body-tertiary rounded">
-      <h2>Guidelines for Taking the Exam</h2>
-      <ul>
-        <li>Read each question carefully before selecting an answer.</li>
-        <li>Answer questions to the best of your ability.</li>
-        <li>Do not use any external resources during the exam.</li>
-      </ul>
-      <h3>Preparation Tips:</h3>
-      <p>
+		<h2>Guidelines for Taking the Exam</h2>
+		<p>Welcome to the Central Washington University Self-Placement Exam for the Computer Science department. This exam is designed to help assess your current level of proficiency in computer science concepts and programming skills. Whether you're a seasoned coder or just beginning your journey in computer science, this exam will assist you and your academic advisors in determining the appropriate level of coursework for your skill level.</p>
+
+		<p>This exam consists of multiple-choice questions covering various topics from the introductory programming courses offered here at Central. This exam is designed to test your knowledge in areas such as variables, conditionals, basic program structure, object-oriented programming, and more. All exam questions will be written with the Java programming language in mind, but the aim of this exam is to gather your general programming knowledge more than anything else.</p>
+
+		<p>Before you begin, ensure that you have a quiet and distraction-free environment to concentrate. Take your time to read each question carefully and select the answer that you believe is correct. Once you complete the exam, your results will be used to recommend appropriate courses for your skill level. Remember, the goal is to help you succeed and thrive here at Central. Good luck, and let's get started!</p>
+		<h3>Tips for taking the exam:</h3>
+		<ul>
+			<li>Read each question carefully before selecting an answer.</li>
+			<li>Answer questions to the best of your ability.</li>
+			<li>Do not use any external resources during the exam.</li>
+		</ul>
+		<h3>Preparation Tips:</h3>
+		<p>
         Prepare for the exam by reviewing basic programming concepts and
-        practicing coding tasks in various languages.
-      </p>
+		practicing coding tasks in Java.
+		</p>
     </div>
 
     <!--Questionnaire Div-->
@@ -53,7 +59,7 @@ include 'questions2.php';
       <div id="answerChoices"></div>
       <br />
 
-      <button class="btn btn-lg btn-bd-red" type="button" id="startBtn">Start</button> <br />
+      <a href="CS110Q1.php"><button class="btn btn-lg btn-bd-red" type="button">Start</button></a> <br />
 
       <button type="submit" class="btn btn-lg btn-bd-red" id="submitBtn" style="display:none;">Submit</button> <br />
 

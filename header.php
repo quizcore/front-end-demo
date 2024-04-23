@@ -198,10 +198,7 @@ session_start();
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./admin.php">Admin</a></li>
-              <li><a class="dropdown-item" href="./guidelines.php">Guidelines</a></li>
               <li><a class="dropdown-item" href="./faq.php">FAQs</a></li>
-              <li><a class="dropdown-item" href="./about.php">About</a></li>
               <li><a class="dropdown-item" href="./contact.php">Contact Us</a></li>
             </ul>
           </li>
