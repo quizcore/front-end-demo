@@ -15,7 +15,7 @@ The code can prompt users for their information, display random questions accord
 
 # ROADMAP
 * [X] Add complete question and answer pairs in FAQ.php
-* [ ] Add project description in about.php
+* [X] Add project description in about.php
 * [ ] Add team member information in about.php
 * [ ] Fill in feature description in index.php
 * [ ] Add authentication to sensitive pages and data
