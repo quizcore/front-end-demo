@@ -14,7 +14,7 @@ The code can prompt users for their information, display random questions accord
 * Open a browser, and enter the URL [http://localhost/front-end-demo/](http://localhost/front-end-demo/).
 
 # ROADMAP
-* [ ] Add complete question and answer pairs in FAQ.php
+* [X] Add complete question and answer pairs in FAQ.php
 * [ ] Add project description in about.php
 * [ ] Add team member information in about.php
 * [ ] Fill in feature description in index.php
@@ -23,3 +23,4 @@ The code can prompt users for their information, display random questions accord
 * [ ] Allow admin to view number of students
 * [ ] View trend of student distribution over time
 * [ ] Record the time of completion of the self-placement quiz
+* [ ] UI Bug Fixing in FAQ.php (Top accordian item does not have a bottom line)
