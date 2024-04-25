@@ -33,7 +33,16 @@ const getLocalSunsetTime = () => {
               .then(data => {
                   const sunsetTime = data.results.sunset;
                   console.log('sunsetTime:', sunsetTime);
-                  const sunsetHour = parseInt(sunsetTime.split(':')[0]); // Extract hour value
+                  // Split the sunset time into hours and minutes
+                  const [hourStr, minuteStr] = sunsetTime.split(':');
+                  let sunsetHour = parseInt(hourStr); // Extract hour value
+                  const minutes = parseInt(minuteStr); // Extract minute value
+                  
+                  // Adjust sunsetHour if it's PM (afternoon)
+                  if (sunsetTime.includes('PM') && sunsetHour !== 12) {
+                      sunsetHour += 12;
+                  }
+                  
                   console.log('sunsetHour:', sunsetHour);
                   console.log('current hours:', date.getHours());
                   if (!isNaN(sunsetHour)) {
@@ -99,20 +108,30 @@ const getLocalSunriseTime = () => {
 const setTheme = theme => {
   const signUpBtn = document.getElementById('signUpBtn');
 
+  if (signUpBtn) {
+    if (theme === 'dark') {
+        signUpBtn.classList.add('btn-outline-danger');
+    } else {
+        signUpBtn.classList.remove('btn-outline-danger');
+    }
+  }
+
   if (theme === 'auto') {
       Promise.all([getLocalSunsetTime(), getLocalSunriseTime()]).then(([sunsetHour, sunriseHour]) => {
           const currentHour = new Date().getHours();
 
           if ((currentHour >= sunsetHour || currentHour < sunriseHour)) {
-              document.documentElement.setAttribute('data-bs-theme', 'dark');
+              
               if (signUpBtn) {
                   signUpBtn.classList.add('btn-outline-danger');
               }
+              document.documentElement.setAttribute('data-bs-theme', 'dark');
           } else {
-              document.documentElement.setAttribute('data-bs-theme', 'light');
+              
               if (signUpBtn) {
                   signUpBtn.classList.remove('btn-outline-danger');
               }
+              document.documentElement.setAttribute('data-bs-theme', 'light');
           }
       }).catch(error => {
           console.error('Error fetching sunrise/sunset time:', error);
@@ -127,6 +146,7 @@ const setTheme = theme => {
           }
       }
   }
+
 }
 
 
@@ -168,7 +188,17 @@ const setTheme = theme => {
   })
 
   window.addEventListener('DOMContentLoaded', () => {
+    const signUpBtn = document.getElementById('signUpBtn');
+
     showActiveTheme(getPreferredTheme())
+
+    if (signUpBtn) {
+      if (getPreferredTheme() === 'dark') {
+        signUpBtn.classList.add('btn-outline-danger');
+      } else {
+        signUpBtn.classList.remove('btn-outline-danger');
+      }
+    }
 
     document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
