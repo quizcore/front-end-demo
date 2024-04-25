@@ -8,10 +8,12 @@ include 'questions2.php';
 <main>
   <!--Main Container-->
   <div class="container">
-    <!-- Display User info-->
+    
+    <!-- Display User info
     <div class="container shadow p-3 my-5 bg-body-tertiary rounded">
       <h1 id="userInfo"></h1>
     </div>
+    -->
 
     <!--Guidelines Div-->
     <div id=guidelinesDiv class="container shadow p-3 my-5 bg-body-tertiary rounded">
@@ -54,20 +56,25 @@ include 'questions2.php';
       <!-- Questions and answer choices will be dynamically updated here -->
     </div>
 
+  <!--startBtn-->
+    <div class="d-grid gap-2 d-md-grid justify-content-md-center">
+    <button type="button" class="btn btn-lg btn-bd-red" id="startBtn">Start</button> <br />
+    </div>
+    
+
     <form id="answerForm" class="d-grid gap-2 d-md-grid justify-content-md-start">
-      <!-- Add an element to display answer choices -->
+
       <div id="answerChoices"></div>
       <br />
-
-      <a href="CS110Q1.php"><button class="btn btn-lg btn-bd-red" type="button">Start</button></a> <br />
 
       <button type="submit" class="btn btn-lg btn-bd-red" id="submitBtn" style="display:none;">Submit</button> <br />
 
       <button class="btn btn-lg btn-bd-red" type="button" id="replaceQuestionsBtn" style="display:none;">Next (medium Questions)</button>
 
       <button class="btn btn-lg btn-bd-red" type="button" id="hardQuestionsBtn" style="display:none;">Next (Hard Questions)</button>
-
     </form>
+
+    
   </div>
 
   <!--Dark mode-->
@@ -114,7 +121,7 @@ include 'questions2.php';
       </li>
     </ul>
   </div>
-
+ <!--
   <script>
     let users = <?php echo json_encode($users); ?>; // PHP array of users
     let questions = <?php echo json_encode($questions); ?>; // PHP array of questions
@@ -361,8 +368,14 @@ include 'questions2.php';
       // alert score
       alert(`Your score for this section is: ${score}/5 and took ${timeTaken}s`);
     });
-  </script>
+  </script>-->
   <!--End of Main-->
+    <!--End of Main-->
+  <script>
+        document.getElementById('startBtn').addEventListener('click', function() {
+            window.location.href = 'CS110Q1.php';
+        });
+</script>
 
   <?php
   // Include footer.
