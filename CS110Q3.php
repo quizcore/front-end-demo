@@ -53,24 +53,28 @@
 		<h2>Exam Questions 3</h2>
 	</div>
 	
-	<!--Questions pulled from database-->
-	<form id="Q3" method="post" action="#">
-			<?php
-				if ($result->num_rows > 0) {
-					// output data of each row
-					while($row = $result->fetch_assoc()) {
-						echo '<div class="container shadow p-3 my-5 bg-body-tertiary rounded">';
-						echo '<h4>' . $row["question_body"] . '</h4>';
-						echo '<input type="radio" id="'  . $row["question_id"] . '-A" name="' . $row["question_id"] . '" value="' . $row["answer_1"] . '" required/><label for="'  . $row["question_id"] . '-A">A: ' . $row["answer_1"] . '</label><br>';
-						echo '<input type="radio" id="'  . $row["question_id"] . '-B" name="' . $row["question_id"] . '" value="' . $row["answer_2"] . '" required/><label for="'  . $row["question_id"] . '-B">B: ' . $row["answer_2"] . '</label><br>';
-						echo '<input type="radio" id="'  . $row["question_id"] . '-C" name="' . $row["question_id"] . '" value="' . $row["answer_3"] . '" required/><label for="'  . $row["question_id"] . '-C">C: ' . $row["answer_3"] . '</label><br>';
-						echo '<input type="radio" id="'  . $row["question_id"] . '-D" name="' . $row["question_id"] . '" value="' . $row["answer_4"] . '" required/><label for="'  . $row["question_id"] . '-D">D: ' . $row["answer_4"] . '</label><br>';
-						echo '</div>';
+	<div class="container">
+		<!--Questions pulled from database-->
+		<form id="Q3" method="post" action="#">
+				<?php
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo '<div class="container shadow p-3 my-5 bg-body-tertiary rounded">';
+							echo '<h4>' . $row["question_body"] . '</h4>';
+							echo '<input type="radio" id="'  . $row["question_id"] . '-A" name="' . $row["question_id"] . '" value="' . $row["answer_1"] . '" required/><label for="'  . $row["question_id"] . '-A">A: ' . $row["answer_1"] . '</label><br>';
+							echo '<input type="radio" id="'  . $row["question_id"] . '-B" name="' . $row["question_id"] . '" value="' . $row["answer_2"] . '" required/><label for="'  . $row["question_id"] . '-B">B: ' . $row["answer_2"] . '</label><br>';
+							echo '<input type="radio" id="'  . $row["question_id"] . '-C" name="' . $row["question_id"] . '" value="' . $row["answer_3"] . '" required/><label for="'  . $row["question_id"] . '-C">C: ' . $row["answer_3"] . '</label><br>';
+							echo '<input type="radio" id="'  . $row["question_id"] . '-D" name="' . $row["question_id"] . '" value="' . $row["answer_4"] . '" required/><label for="'  . $row["question_id"] . '-D">D: ' . $row["answer_4"] . '</label><br>';
+							echo '</div>';
+						}
 					}
-				}
-			?>
-			<input type="submit" value="Next" class="btn btn-lg btn-bd-red" style="margin-left:35%;">
-	</form>	
+				?>
+			<div class="container d-grid gap-2 d-md-grid justify-content-md-center">
+				<input type="submit" value="Next" class="btn btn-lg btn-bd-red">
+			</div>
+		</form>	
+	</div>
 	
 <?php
 // Include footer.
