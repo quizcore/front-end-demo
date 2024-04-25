@@ -80,7 +80,7 @@
         <label for="floatingPassword">Date of Birth</label>
       </div><br />
 
-      <input type="submit" value="Sign Up" class="btn btn-lg btn-dark w-100 py-2"> 
+      <input type="submit" value="Sign Up" class="btn btn-lg btn-dark btn-outline-light w-100 py-2"> 
 	  <!--<button class="btn btn-lg btn-dark w-100 py-2" type="submit">Sign Up</button>-->
     </form>
   </div>
