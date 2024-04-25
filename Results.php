@@ -92,7 +92,7 @@
 						echo "<label for='floatingPassword'>Date of Birth</label>";
 					echo "</div><br />";
 
-					echo "<input type='submit' value='Sign Up' class='btn btn-lg btn-dark btn-outline-light w-100 py-2'>";					
+					echo "<input id=signUpBtn type='submit' value='Sign Up' class='btn btn-lg btn-dark w-100 py-2'>";					
 				echo "</form>";
 			echo "</div>";
 		}
